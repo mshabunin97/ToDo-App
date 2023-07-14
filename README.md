@@ -6,10 +6,10 @@ This is a simple ToDo application built with React.
 
 ## Features
 
-* Add tasks to your ToDo list
-* Mark tasks as completed
-* Edit tasks
-* Delete tasks
+* Add tasks to your ToDo list.
+* Mark tasks as completed.
+* Edit tasks.
+* Delete tasks.
 
 
 ## Technologies Used
