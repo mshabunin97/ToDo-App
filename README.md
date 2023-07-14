@@ -1,8 +1,8 @@
 # [ToDo App](https://mshabunin97.github.io/ToDo-App/)
 
-![todo]("public/screen/todoapp.png")
+![todo](public/screen/todoapp.png)
 
-    This is a simple ToDo application built with React.
+This is a simple ToDo application built with React.
 
 ## Features
 
