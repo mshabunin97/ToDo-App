@@ -1,38 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right top, #e9b7ce, #ecbcd6, #eec2de, #f1c7e5, #f3cded, #ecd3f5, #e5dafb, #e0e0ff, #d4e7ff, #cdecfe, #cdf0f8, #d3f3f1);
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  height: 100vh;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #000000;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TodoWrapper {
+  background: #F8F8FF;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 10px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TodoForm {
+  width: 100%;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #958ea7;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #000000;
+}
+
+.todo-input::placeholder {
+  color: #0808084d;
+}
+
+.todo-btn {
+  background: #ceceff;
+  color: #0f0f0f;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  
+}
+
+.Todo {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background:  #dadaf3;
+  color: #0a0a0a;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-trash {
+  margin-left: 0.75rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.completed {
+  color: #bab3ce;
+  text-decoration: line-through;
+}
+
+
+@media (max-width: 450px) {
+  .TodoWrapper {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .Todo {
+    width: 100%;
+  }
+  .todo-input {
+    margin-bottom: 15px;
+  }
+  .todo-btn {
+    margin-bottom: 10px;
+  }
+  .todo-input {
+    width: 100%;
+  }
+  .position {
+    display: flex;
+    flex-direction: column;
+  }
+  .fa-trash {
+    margin-left: 0px;
+    margin-top: 14px;
   }
 }
+ 
